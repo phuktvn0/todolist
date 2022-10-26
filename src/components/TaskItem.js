@@ -2,7 +2,7 @@ import React from 'react'
 
 function TaskItem({task, setTaskStatus, removeTask}) {
   return (
-    <li key={task.id} className={task.status ? "done" : ""}>
+    <li  className={task.status ? "done" : ""}>
         <span className="label">{task.title}</span>
         <div className="actions">
           <input type="checkbox" className="btn-action btn-action-done" 

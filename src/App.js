@@ -31,7 +31,6 @@ function App() {
 
 const setTaskStatus = (taskId, status) => {
   setTasks(tasks.map(task =>{
-    console.log(tasks);
     if (task.id === taskId) {
       return {...task, status: status ? 1 : 0}
     }
